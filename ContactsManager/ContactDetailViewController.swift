@@ -48,16 +48,14 @@ class ContactDetailViewController: UIViewController, UITextFieldDelegate {
             contact.email = email
         }
         let sqliteDB = SqliteDbManager()
-        sqliteDB.update(contact: contact)
+        sqliteDB.update(contact: self.contact)
         self.performSegue(withIdentifier: segueId, sender: self)
-        //self.navigationController?.popViewController(animated: true)
     }
 
     @IBAction func deleteButtonPressed() {
         let sqliteDb = SqliteDbManager()
         sqliteDb.delete(contact: contact)
         self.performSegue(withIdentifier: segueId, sender: self)
-        //self.navigationController?.popViewController(animated: true)
     }
     
     // MARK: - UITextFieldDelegate

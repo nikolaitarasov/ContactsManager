@@ -22,7 +22,7 @@ class SqliteDbManager {
             do {
                 dbURL = try FileManager.default
                     .url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-                    .appendingPathComponent("contacts13.db")
+                    .appendingPathComponent("contacts.db")
                 os_log("URL: %s", dbURL.absoluteString)
             } catch {
                 //TODO: Just logging the error and returning empty path URL here. Handle the error gracefully after logging

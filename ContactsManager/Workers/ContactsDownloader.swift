@@ -56,7 +56,3 @@ struct ContactsDownloader {
         return contacts
     }
 }
-
-extension Notification.Name {
-    static let contactsDidDownload = Notification.Name("contactsDidDownload")
-}

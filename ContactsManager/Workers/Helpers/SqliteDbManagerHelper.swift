@@ -120,30 +120,12 @@ extension SqliteDbManager {
         defer {
             sqlite3_reset(self.deleteEntryStmt)
         }
-        
-        //Inserting firstName in deleteEntryStmt prepared statement
-        /*if sqlite3_bind_text(self.deleteEntryStmt, 1, (contact.firstName as NSString).utf8String, -1, nil) != SQLITE_OK {
-            logDbErr("sqlite3_bind_text(deleteEntryStmt)")
-            return
-        }
-        
-        //Inserting lastName in deleteEntryStmt prepared statement
-        if sqlite3_bind_text(self.deleteEntryStmt, 2, (contact.lastName as NSString).utf8String, -1, nil) != SQLITE_OK {
-            logDbErr("sqlite3_bind_text(deleteEntryStmt)")
-            return
-        }*/
 
         //Inserting email in deleteEntryStmt prepared statement
         if sqlite3_bind_text(self.deleteEntryStmt, 1, (contact.email as NSString).utf8String, -1, nil) != SQLITE_OK {
             logDbErr("sqlite3_bind_text(deleteEntryStmt)")
             return
         }
-
-        //Inserting picture in deleteEntryStmt prepared statement
-        /*if sqlite3_bind_text(self.deleteEntryStmt, 4, (contact.picture as NSString).utf8String, -1, nil) != SQLITE_OK {
-            logDbErr("sqlite3_bind_text(deleteEntryStmt)")
-            return
-        }*/
         
         //executing the query to delete row
         let r = sqlite3_step(self.deleteEntryStmt)
