@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		5B6A3FB02639BA7600E57883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3FAF2639BA7600E57883 /* AppDelegate.swift */; };
 		5B6A3FB22639BA7600E57883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3FB12639BA7600E57883 /* SceneDelegate.swift */; };
-		5B6A3FB42639BA7600E57883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3FB32639BA7600E57883 /* ViewController.swift */; };
 		5B6A3FB72639BA7600E57883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6A3FB52639BA7600E57883 /* Main.storyboard */; };
 		5B6A3FB92639BA7900E57883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B6A3FB82639BA7900E57883 /* Assets.xcassets */; };
 		5B6A3FBC2639BA7900E57883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6A3FBA2639BA7900E57883 /* LaunchScreen.storyboard */; };
 		5B6A3FC72639BA7A00E57883 /* ContactsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3FC62639BA7A00E57883 /* ContactsManagerTests.swift */; };
 		5B6A3FD22639BA7A00E57883 /* ContactsManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3FD12639BA7A00E57883 /* ContactsManagerUITests.swift */; };
+		5B6A3FE72639BB2D00E57883 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3FE62639BB2C00E57883 /* Contact.swift */; };
+		5B6A3FEF2639BDA000E57883 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3FEE2639BDA000E57883 /* ContactsTableViewController.swift */; };
+		5B6A3FF72639CC1700E57883 /* ContactsDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3FF62639CC1700E57883 /* ContactsDownloader.swift */; };
+		5B6A40052639DA4200E57883 /* SqliteDbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A40042639DA4200E57883 /* SqliteDbManager.swift */; };
+		5B6A400A2639DCB900E57883 /* SqliteDbManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A40092639DCB900E57883 /* SqliteDbManagerHelper.swift */; };
+		5B6A4016263B40F300E57883 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A4015263B40F300E57883 /* ContactDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		5B6A3FAC2639BA7600E57883 /* ContactsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6A3FAF2639BA7600E57883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B6A3FB12639BA7600E57883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B6A3FB32639BA7600E57883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B6A3FB62639BA7600E57883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B6A3FB82639BA7900E57883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B6A3FBB2639BA7900E57883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,13 @@
 		5B6A3FCD2639BA7A00E57883 /* ContactsManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6A3FD12639BA7A00E57883 /* ContactsManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManagerUITests.swift; sourceTree = "<group>"; };
 		5B6A3FD32639BA7A00E57883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B6A3FE62639BB2C00E57883 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		5B6A3FEE2639BDA000E57883 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		5B6A3FF62639CC1700E57883 /* ContactsDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDownloader.swift; sourceTree = "<group>"; };
+		5B6A40002639D11700E57883 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5B6A40042639DA4200E57883 /* SqliteDbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteDbManager.swift; sourceTree = "<group>"; };
+		5B6A40092639DCB900E57883 /* SqliteDbManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteDbManagerHelper.swift; sourceTree = "<group>"; };
+		5B6A4015263B40F300E57883 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +94,7 @@
 				5B6A3FC52639BA7A00E57883 /* ContactsManagerTests */,
 				5B6A3FD02639BA7A00E57883 /* ContactsManagerUITests */,
 				5B6A3FAD2639BA7600E57883 /* Products */,
+				5B6A3FFF2639D11700E57883 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +111,12 @@
 		5B6A3FAE2639BA7600E57883 /* ContactsManager */ = {
 			isa = PBXGroup;
 			children = (
+				5B6A3FFB2639CC1C00E57883 /* Workers */,
+				5B6A3FE22639BB0E00E57883 /* Models */,
 				5B6A3FAF2639BA7600E57883 /* AppDelegate.swift */,
 				5B6A3FB12639BA7600E57883 /* SceneDelegate.swift */,
-				5B6A3FB32639BA7600E57883 /* ViewController.swift */,
+				5B6A3FEE2639BDA000E57883 /* ContactsTableViewController.swift */,
+				5B6A4015263B40F300E57883 /* ContactDetailViewController.swift */,
 				5B6A3FB52639BA7600E57883 /* Main.storyboard */,
 				5B6A3FB82639BA7900E57883 /* Assets.xcassets */,
 				5B6A3FBA2639BA7900E57883 /* LaunchScreen.storyboard */,
@@ -126,6 +141,41 @@
 				5B6A3FD32639BA7A00E57883 /* Info.plist */,
 			);
 			path = ContactsManagerUITests;
+			sourceTree = "<group>";
+		};
+		5B6A3FE22639BB0E00E57883 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A3FE62639BB2C00E57883 /* Contact.swift */,
+			);
+			name = Models;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		5B6A3FFB2639CC1C00E57883 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A40112639DCEB00E57883 /* Helpers */,
+				5B6A3FF62639CC1700E57883 /* ContactsDownloader.swift */,
+				5B6A40042639DA4200E57883 /* SqliteDbManager.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		5B6A3FFF2639D11700E57883 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A40002639D11700E57883 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B6A40112639DCEB00E57883 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A40092639DCB900E57883 /* SqliteDbManagerHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B6A3FB42639BA7600E57883 /* ViewController.swift in Sources */,
+				5B6A3FE72639BB2D00E57883 /* Contact.swift in Sources */,
+				5B6A3FEF2639BDA000E57883 /* ContactsTableViewController.swift in Sources */,
 				5B6A3FB02639BA7600E57883 /* AppDelegate.swift in Sources */,
 				5B6A3FB22639BA7600E57883 /* SceneDelegate.swift in Sources */,
+				5B6A400A2639DCB900E57883 /* SqliteDbManagerHelper.swift in Sources */,
+				5B6A3FF72639CC1700E57883 /* ContactsDownloader.swift in Sources */,
+				5B6A4016263B40F300E57883 /* ContactDetailViewController.swift in Sources */,
+				5B6A40052639DA4200E57883 /* SqliteDbManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
